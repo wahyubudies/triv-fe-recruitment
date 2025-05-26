@@ -35,19 +35,19 @@ const Reward = () => {
                </h2>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center py-8 md:py-16">
                   <div className="flex flex-col items-center">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumOne} alt="Juara 1" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Motor Vario</p>
                   </div>
                   <div className="flex flex-col items-center">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumTwo} alt="Juara 2" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Macbook Air M1 2020</p>
                   </div>
                   <div className="flex flex-col items-center md:col-span-2 lg:col-span-1">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumThree} alt="Juara 3" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Samsung Galaxy Tab S7+</p>
@@ -62,19 +62,19 @@ const Reward = () => {
                </h2>
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-center py-8 md:py-16">
                   <div className="flex flex-col items-center">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumFour} alt="Juara Harapan 1" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Motor Vario</p>
                   </div>
                   <div className="flex flex-col items-center">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumFive} alt="Juara Harapan 2" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Macbook Air M1 2020</p>
                   </div>
                   <div className="flex flex-col items-center md:col-span-2 lg:col-span-1">
-                     <div className="h-[200px] sm:h-[220px] md:h-[250px] flex items-center justify-center">
+                     <div className="h-[200px] sm:h-[300px] md:h-[330px] flex items-center justify-center">
                         <img src={PodiumSix} alt="Juara Harapan 3" className="mx-auto max-h-full object-contain" />
                      </div>
                      <p className="text-white text-lg sm:text-xl text-center mt-4 font-medium">Samsung Galaxy Tab S7+</p>

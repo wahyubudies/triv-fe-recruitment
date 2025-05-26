@@ -26,7 +26,7 @@ const Footer = () => {
                <div>
                   <h3 className="text-lg font-semibold mb-4">Market Price</h3>
                   <ul className="space-y-2">
-                     <li><NavLink to="/live-rate" className="text-gray-400 hover:text-white transition-colors">Live Rate</NavLink></li>
+                     <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Live Rate</NavLink></li>
                   </ul>
                </div>
 
@@ -34,10 +34,10 @@ const Footer = () => {
                <div>
                   <h3 className="text-lg font-semibold mb-4">Triv Feature</h3>
                   <ul className="space-y-2">
-                     <li><NavLink to="/staking" className="text-gray-400 hover:text-white transition-colors">Staking</NavLink></li>
-                     <li><NavLink to="/market" className="text-gray-400 hover:text-white transition-colors">Market</NavLink></li>
-                     <li><NavLink to="/affiliate" className="text-gray-400 hover:text-white transition-colors">Affiliate</NavLink></li>
-                     <li><NavLink to="/gift-cards" className="text-gray-400 hover:text-white transition-colors">Gift Cards</NavLink></li>
+                     <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Staking</NavLink></li>
+                     <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Market</NavLink></li>
+                     <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Affiliate</NavLink></li>
+                     <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Gift Cards</NavLink></li>
                   </ul>
                </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
                <div>
                   <h3 className="text-lg font-semibold mb-4">Company</h3>
                   <ul className="space-y-2">
-                     <li><NavLink to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</NavLink></li>
+                     <li><NavLink to="/#" className="text-gray-400 hover:text-white transition-colors">Contact Us</NavLink></li>
                   </ul>
                </div>
             </div>
@@ -67,50 +67,50 @@ const Footer = () => {
                   {/* Column 1 */}
                   <div>
                      <ul className="space-y-2">
-                        <li><NavLink to="/crypto/paypal" className="text-gray-400 hover:text-white transition-colors">Paypal</NavLink></li>
-                        <li><NavLink to="/crypto/solana" className="text-gray-400 hover:text-white transition-colors">Solana</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Paypal</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Solana</NavLink></li>
                      </ul>
                   </div>
 
                   {/* Column 2 */}
                   <div>
                      <ul className="space-y-2">
-                        <li><NavLink to="/crypto/bitcoin" className="text-gray-400 hover:text-white transition-colors">Bitcoin</NavLink></li>
-                        <li><NavLink to="/crypto/ethereum" className="text-gray-400 hover:text-white transition-colors">Ethereum</NavLink></li>
-                        <li><NavLink to="/crypto/stellar" className="text-gray-400 hover:text-white transition-colors">Stellar</NavLink></li>
-                        <li><NavLink to="/crypto/ripple" className="text-gray-400 hover:text-white transition-colors">Ripple</NavLink></li>
-                        <li><NavLink to="/crypto/cardano" className="text-gray-400 hover:text-white transition-colors">Cardano</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Bitcoin</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Ethereum</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Stellar</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Ripple</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Cardano</NavLink></li>
                      </ul>
                   </div>
 
                   {/* Column 3 */}
                   <div>
                      <ul className="space-y-2">
-                        <li><NavLink to="/crypto/eos" className="text-gray-400 hover:text-white transition-colors">Eos</NavLink></li>
-                        <li><NavLink to="/crypto/dash" className="text-gray-400 hover:text-white transition-colors">Dash</NavLink></li>
-                        <li><NavLink to="/crypto/tether" className="text-gray-400 hover:text-white transition-colors">Tether</NavLink></li>
-                        <li><NavLink to="/crypto/litecoin" className="text-gray-400 hover:text-white transition-colors">Litecoin</NavLink></li>
-                        <li><NavLink to="/crypto/polkadot" className="text-gray-400 hover:text-white transition-colors">Polkadot</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Eos</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Dash</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Tether</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Litecoin</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Polkadot</NavLink></li>
                      </ul>
                   </div>
 
                   {/* Column 4 */}
                   <div>
                      <ul className="space-y-2">
-                        <li><NavLink to="/crypto/bnb" className="text-gray-400 hover:text-white transition-colors">BNB</NavLink></li>
-                        <li><NavLink to="/crypto/dogecoin" className="text-gray-400 hover:text-white transition-colors">DogeCoin</NavLink></li>
-                        <li><NavLink to="/crypto/chainlink" className="text-gray-400 hover:text-white transition-colors">Chainlink</NavLink></li>
-                        <li><NavLink to="/crypto/matic-polygon" className="text-gray-400 hover:text-white transition-colors">MaticPolygon</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">BNB</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">DogeCoin</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Chainlink</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">MaticPolygon</NavLink></li>
                      </ul>
                   </div>
 
                   {/* Column 5 */}
                   <div>
                      <ul className="space-y-2">
-                        <li><NavLink to="/crypto/shibainu" className="text-gray-400 hover:text-white transition-colors">SHIBAINU</NavLink></li>
-                        <li><NavLink to="/crypto/axie-infinity" className="text-gray-400 hover:text-white transition-colors">AxieInfinity</NavLink></li>
-                        <li><NavLink to="/crypto/saham-as" className="text-gray-400 hover:text-white transition-colors">Saham AS</NavLink></li>
-                        <li><NavLink to="/crypto/saham-tesla" className="text-gray-400 hover:text-white transition-colors">Saham Tesla</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">SHIBAINU</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">AxieInfinity</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Saham AS</NavLink></li>
+                        <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Saham Tesla</NavLink></li>
                      </ul>
                   </div>
                </div>
@@ -131,7 +131,7 @@ const Footer = () => {
                   <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                      <img src={TikTokIcon} alt="TikTok" className="h-4 w-4" />
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                      <img src={XIcon} alt="X (Twitter)" className="h-4 w-4" />
                   </a>
                   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
