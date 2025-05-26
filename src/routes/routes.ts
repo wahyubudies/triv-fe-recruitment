@@ -1,13 +1,19 @@
 import { createBrowserRouter } from "react-router";
-import { MainLayout } from "../components/layouts";
-import { HomePage, ProductPage } from "../pages";
+import { AuthLayout, MainLayout } from "../components/layouts";
+import { CartPage, HomePage, ProductPage } from "../pages";
 
 const router = createBrowserRouter([
    {
       Component: MainLayout,
       children: [
          { index: true, Component: HomePage },
-         { path: "products", Component: ProductPage }
+      ]
+   },
+   {
+      Component: AuthLayout,
+      children: [
+         { path: "products", Component: ProductPage },
+         { path: "carts", Component: CartPage }
       ]
    },
 ]);

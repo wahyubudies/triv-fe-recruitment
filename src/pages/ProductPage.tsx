@@ -1,8 +1,12 @@
-import React from 'react';
-
+import { Container } from "../components/common";
+import { ProductList } from "../features/products/components";
 const ProductPage = () => {
    return (
-      <div>ProductPage</div>
+      <>
+         <Container>
+            <ProductList />
+         </Container>
+      </>
    );
 };
 
