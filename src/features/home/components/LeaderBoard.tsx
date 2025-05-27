@@ -5,7 +5,6 @@ import Podium1Image from "../../../assets/icons/podium-1.png";
 import Podium2Image from "../../../assets/icons/podium-2.png";
 import Podium3Image from "../../../assets/icons/podium-3.png";
 
-
 const LeaderBoard = () => {
    return (
       <>
@@ -23,7 +22,6 @@ const LeaderBoard = () => {
                <button className="bg-primary hover:bg-blue-300 text-white py-2 sm:py-3 lg:py-4 px-4 sm:px-6 lg:px-8 text-sm sm:text-base md:text-lg lg:text-xl font-medium w-fit flex items-center mb-3 sm:mb-4 lg:mb-6 transition-colors mx-auto">
                   Daftar Sekarang <span className="ml-2">›</span>
                </button>
-               {/* podium leaderboard */}
                <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 pt-[100px] items-end mt-8'>
                   <div className="order-0 px-4 py-8 bg-(image:--background-card-board) bg-cover bg-center rounded-2xl mt-20 lg:mt-0">
                      <img src={Podium2Image} alt="" className='w-full max-w-[200px] mt-[-100px] mb-5 lg:mb-10 mx-auto mix-blend-lighten object-contain' />

@@ -68,7 +68,7 @@ const CartList = () => {
          </> : (
             <p className='text-gray-400 text-sm text-center italic my-5 tracking-wide'>No items are available.</p>
          )}
-      </div >
+      </div>
    );
 };
 

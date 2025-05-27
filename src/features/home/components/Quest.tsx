@@ -52,7 +52,6 @@ const Quest = () => {
                </div>
             </Container>
          </div>
-         {/* cara pendaftaran */}
          <div className="bg-(image:--background-pendaftaran) py-16 sm:py-24 md:py-28 lg:py-44 bg-cover bg-right-bottom overflow-hidden">
             <Container className="flex justify-between items-center">
                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">

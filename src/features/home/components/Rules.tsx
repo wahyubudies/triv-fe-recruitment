@@ -11,9 +11,7 @@ const Rules = () => {
             <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-8 border-b-8 border-primary text-center mx-auto w-fit">
                PERATURAN KOMPETISI
             </h2>
-            {/* create here */}
             <div className="max-w-3xl mx-auto">
-               {/* General Rules Section */}
                <div className="bg-[#333333] rounded-md mb-4 overflow-hidden">
                   <div 
                      className="flex justify-between items-center p-4 cursor-pointer"
@@ -48,12 +46,10 @@ const Rules = () => {
                   )}
                </div>
 
-               {/* Requirement Section */}
                <div className="bg-[#333333] rounded-md overflow-hidden">
                   <div 
                      className="flex justify-between items-center p-4 cursor-pointer"
-                     onClick={() => setRequirementOpen(!requirementOpen)}
-                  >
+                     onClick={() => setRequirementOpen(!requirementOpen)}>
                      <h3 className="text-white text-xl font-semibold">Requirement</h3>
                      <button className="text-white">
                         <svg 

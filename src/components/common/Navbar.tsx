@@ -11,7 +11,6 @@ const Navbar = () => {
 
    const serviceRef = useRef<HTMLDivElement>(null);
 
-   // Close dropdowns when clicking outside
    useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
          if (serviceRef.current && !serviceRef.current.contains(event.target as Node)) {
@@ -27,7 +26,6 @@ const Navbar = () => {
       };
    }, []);
 
-   // Toggle service dropdown
    const toggleServiceDropdown = (e: React.MouseEvent) => {
       e.preventDefault();
       setShowServiceDropdown(!showServiceDropdown);
@@ -37,21 +35,18 @@ const Navbar = () => {
       }
    };
 
-   // Toggle E-currency dropdown
    const toggleEcurrencyDropdown = (e: React.MouseEvent) => {
       e.stopPropagation();
       setShowEcurrencyDropdown(!showEcurrencyDropdown);
       setShowProductDropdown(false);
    };
 
-   // Toggle Product dropdown
    const toggleProductDropdown = (e: React.MouseEvent) => {
       e.stopPropagation();
       setShowProductDropdown(!showProductDropdown);
       setShowEcurrencyDropdown(false);
    };
 
-   // Toggle mobile menu
    const toggleMobileMenu = () => {
       setMobileMenuOpen(!mobileMenuOpen);
       // Close all dropdowns when toggling mobile menu
@@ -95,8 +90,7 @@ const Navbar = () => {
    return (
       <>
          <div className='bg-[#202020] text-white py-2 md:py-3 lg:py-4'>
-            <Container className="flex items-center justify-center lg:justify-end">
-               {/* Auth Buttons */}
+            <Container className="flex items-center justify-center lg:justify-end">               
                <div className="flex items-center space-x-2 md:space-x-4">
                   <NavLink to="/login" className="text-sm md:text-base hover:text-blue-400 transition-colors">Login</NavLink>
                   <NavLink to="/signup" className="text-sm md:text-base bg-blue-500 hover:bg-blue-600 px-2 py-1 md:px-4 md:py-2 transition-colors">Sign Up</NavLink>
@@ -111,15 +105,13 @@ const Navbar = () => {
             </Container>
          </div>
          <nav className="bg-[#252525] text-white py-3 md:py-4 relative">
-            <Container className="flex justify-between items-center">
-               {/* Logo */}
+            <Container className="flex justify-between items-center">               
                <div className="flex items-center">
                   <NavLink to="/" className="flex items-center">
                      <img src={Logo} alt="Triv Logo" className="h-6 md:h-8" />
                   </NavLink>
                </div>
 
-               {/* Mobile menu button */}
                <button
                   className="lg:hidden flex items-center focus:outline-none cursor-pointer"
                   onClick={toggleMobileMenu}
@@ -140,13 +132,11 @@ const Navbar = () => {
                      />
                   </svg>
                </button>
-
-               {/* Desktop Navigation Links */}
+               
                <div className="hidden lg:flex items-center space-x-3">
                   <NavLink to="/harga" className="text-sm xl:text-base font-medium hover:text-blue-400 transition-colors">Harga (Jual Beli)</NavLink>
                   <span className='h-4 w-[1px] bg-white'></span>
-
-                  {/* Service Dropdown */}
+                  
                   <div className="relative" ref={serviceRef}>
                      <button
                         onClick={toggleServiceDropdown}
@@ -156,8 +146,7 @@ const Navbar = () => {
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                      </button>
-
-                     {/* First level dropdown */}
+                     
                      {showServiceDropdown && (
                         <div className="absolute left-0 mt-2 w-40 md:w-48 bg-[#303030] shadow-lg z-10">
                            <div
@@ -167,8 +156,7 @@ const Navbar = () => {
                               <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transition-transform ${showEcurrencyDropdown ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                               </svg>
-
-                              {/* E-currency submenu */}
+                              
                               {showEcurrencyDropdown && (
                                  <div className="absolute left-full top-0 w-40 md:w-48 bg-[#303030] shadow-lg overflow-hidden max-h-[70vh] overflow-y-auto">
                                     {ECurrencyMenu.map(item => (
@@ -187,8 +175,7 @@ const Navbar = () => {
                               <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transition-transform ${showProductDropdown ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                               </svg>
-
-                              {/* Product submenu */}
+                              
                               {showProductDropdown && (
                                  <div className="absolute left-full top-0 w-40 md:w-48 bg-[#303030] shadow-lg overflow-hidden">
                                     {ProductMenu.map(item => (
@@ -217,8 +204,7 @@ const Navbar = () => {
                   <NavLink to="/contact" className="text-sm xl:text-base font-medium hover:text-blue-400 transition-colors">Contact Us</NavLink>
                </div>
             </Container>
-
-            {/* Mobile Navigation Menu */}
+            
             {mobileMenuOpen && (
 
                <div className="lg:hidden absolute top-full left-0 right-0 bg-[#303030] z-50 shadow-lg">
@@ -227,8 +213,7 @@ const Navbar = () => {
                         <NavLink to="/harga" className="block py-2 text-base font-medium hover:text-blue-400 transition-colors">
                            Harga (Jual Beli)
                         </NavLink>
-
-                        {/* Mobile Service Dropdown */}
+                        
                         <div className="py-2" ref={serviceRef}>
                            <button
                               onClick={toggleServiceDropdown}
@@ -241,8 +226,7 @@ const Navbar = () => {
                            </button>
 
                            {showServiceDropdown && (
-                              <div className="pl-4 mt-2 border-l-2 border-gray-600">
-                                 {/* E-currency Mobile */}
+                              <div className="pl-4 mt-2 border-l-2 border-gray-600">                                 
                                  <div className="py-2">
                                     <button
                                        onClick={toggleEcurrencyDropdown}
@@ -265,7 +249,6 @@ const Navbar = () => {
                                     )}
                                  </div>
 
-                                 {/* Product Mobile */}
                                  <div className="py-2">
                                     <button
                                        onClick={toggleProductDropdown}

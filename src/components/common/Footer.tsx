@@ -12,25 +12,21 @@ import { NavLink } from "react-router";
 const Footer = () => {
    return (
       <footer className="bg-[#182129] text-white py-8 md:pt-16 ">
-         <Container>
-            {/* Top section with logo and main categories */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-               {/* Logo */}
+         <Container>            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">               
                <div>
                   <NavLink to="/">
                      <img src={Logo} alt="Triv Logo" className="h-10 mb-6" />
                   </NavLink>
                </div>
-
-               {/* Market Price */}
+               
                <div>
                   <h3 className="text-lg font-semibold mb-4">Market Price</h3>
                   <ul className="space-y-2">
                      <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Live Rate</NavLink></li>
                   </ul>
                </div>
-
-               {/* Triv Feature */}
+               
                <div>
                   <h3 className="text-lg font-semibold mb-4">Triv Feature</h3>
                   <ul className="space-y-2">
@@ -40,8 +36,7 @@ const Footer = () => {
                      <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Gift Cards</NavLink></li>
                   </ul>
                </div>
-
-               {/* Product */}
+               
                <div>
                   <h3 className="text-lg font-semibold mb-4">Product</h3>
                   <ul className="space-y-2">
@@ -50,8 +45,7 @@ const Footer = () => {
                      <li><NavLink to="/bayar-tagihan" className="text-gray-400 hover:text-white transition-colors">Bayar Tagihan</NavLink></li>
                   </ul>
                </div>
-
-               {/* Company */}
+               
                <div>
                   <h3 className="text-lg font-semibold mb-4">Company</h3>
                   <ul className="space-y-2">
@@ -59,20 +53,16 @@ const Footer = () => {
                   </ul>
                </div>
             </div>
-
-            {/* Crypto & Asset Digital Section */}
+            
             <div className="border-t border-gray-700 pt-8 mb-12">
                <h3 className="text-lg font-semibold mb-4">Crypto & Aset Digital Lain</h3>
-               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                  {/* Column 1 */}
+               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">                  
                   <div>
                      <ul className="space-y-2">
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Paypal</NavLink></li>
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Solana</NavLink></li>
                      </ul>
-                  </div>
-
-                  {/* Column 2 */}
+                  </div>               
                   <div>
                      <ul className="space-y-2">
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Bitcoin</NavLink></li>
@@ -81,9 +71,7 @@ const Footer = () => {
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Ripple</NavLink></li>
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Cardano</NavLink></li>
                      </ul>
-                  </div>
-
-                  {/* Column 3 */}
+                  </div>                  
                   <div>
                      <ul className="space-y-2">
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Eos</NavLink></li>
@@ -92,9 +80,7 @@ const Footer = () => {
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Litecoin</NavLink></li>
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Polkadot</NavLink></li>
                      </ul>
-                  </div>
-
-                  {/* Column 4 */}
+                  </div>                  
                   <div>
                      <ul className="space-y-2">
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">BNB</NavLink></li>
@@ -102,9 +88,7 @@ const Footer = () => {
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">Chainlink</NavLink></li>
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">MaticPolygon</NavLink></li>
                      </ul>
-                  </div>
-
-                  {/* Column 5 */}
+                  </div>                  
                   <div>
                      <ul className="space-y-2">
                         <li><NavLink to="#" className="text-gray-400 hover:text-white transition-colors">SHIBAINU</NavLink></li>
@@ -115,8 +99,7 @@ const Footer = () => {
                   </div>
                </div>
             </div>
-
-            {/* Bottom section with copyright and social media */}
+            
             <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
                <p className="text-gray-400 text-sm mb-4 md:mb-0">
                   © 2015 - 2025 Triv - Jual Beli Aset Digital Indonesia

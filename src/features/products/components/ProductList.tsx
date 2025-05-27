@@ -1,5 +1,4 @@
 import useCartActions from '../hooks/useCartActions';
-import PlusIcon from "../../../assets/icons/plus.svg";
 import AddToCartIcon from "../../../assets/icons/add-to-cart.svg";
 import { toast } from 'react-toastify';
 import type { Product } from '../types/product.type';
