@@ -46,9 +46,9 @@ src/
 ├── styles/                        # Global styling (misal: Tailwind, CSS, atau SCSS)
 
 ```
-## Screenshots
+## Video
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Video](https://raw.githubusercontent.com/wahyubudies/triv-fe-recruitment/refs/heads/main/public/demo.mp4)
 
 
 ## Tech Stack and Library
