@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Frontend Test Triv
 
-Currently, two official plugins are available:
+## List Page
+* http://localhost:5173/ (halaman utama)
+* http://localhost:5173/products (halaman produk)
+* http://localhost:5173/carts (halaman cart)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Installation and Running
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Install with npm
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+  cd triv-fe-recruitment
+  npm install
+  npm run dev
 ```
+    
+## Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Add Item to Cart
+- Remove Item
+- Clear All Item
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+
+## Structure Folder
 ```
+src/
+├── assets/                        # Kumpulan aset statis
+│   ├── icons/                     # Aset ikon
+│   └── images/                    # Aset gambar
+├── components/                    # Komponen global yang dapat digunakan di seluruh aplikasi
+│   ├── common/                    # Komponen umum (Navbar, Footer, dll)
+│   └── layouts/                   # Komponen layout global
+├── features/                      # Modul fitur-fitur utama
+│   ├── carts/                     # Fitur keranjang (Cart)
+│   │   ├── components/            # Komponen lokal khusus fitur Cart
+│   │   ├── context/               # State management lokal (misalnya Recoil atom atau Context API)
+│   │   ├── hooks/                 # Custom hooks lokal untuk fitur Cart
+│   │   └── types/                 # Tipe data (TypeScript) untuk fitur Cart
+│   └── ...                        # Folder fitur lainnya (misalnya: home/, products/)
+├── pages/                         # Halaman utama aplikasi
+├── routes/                        # Konfigurasi routing aplikasi
+├── styles/                        # Global styling (misal: Tailwind, CSS, atau SCSS)
+
+```
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Tech Stack and Library
+
+React, TypeScript, RecoilJS, TailwindCSS, React Router, React Toastify, Vite
